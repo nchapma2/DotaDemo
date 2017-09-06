@@ -1,0 +1,22 @@
+{
+  "name": "dotademo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nchapma2/DotaDemo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nchapma2/DotaDemo/issues"
+  },
+  "homepage": "https://github.com/nchapma2/DotaDemo#readme",
+  "dependencies": {
+    "bignumber": "^1.1.0"
+  }
+}
