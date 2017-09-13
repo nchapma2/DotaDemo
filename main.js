@@ -1,13 +1,21 @@
 $d(() => {
-  let root = $d('dota');
-  root.append($d("<select className='hero-select'></select"));
+  let root = $d('.dota');
+  let select = $d('<select>');
+  select.addClass('hero-select');
+  // root.append(select);
 
-  let heroes;
-  $d.ajax({
+  let promise = $d.ajax({
+    method: "GET",
     url: "https://api.opendota.com/api/heroes"
-  })
-  .then(arr => heroes = arr);
-  heroes.forEach(hero => {
-    $('hero-select').append(`<option>${hero.localized_name}</option>`);
+  }).then(arr => {
+    arr.forEach((el, i) => {
+      let option = $d('<option>');
+      option.addClass(`${el.id}`);
+      option.attr('value', `${el.id}`);
+      let text = document.createTextNode(`${el.localized_name}`);
+      option.elements[0].appendChild(text);
+      select.append(option);
+    });
+    $d('.dota').append(select);
   });
 });

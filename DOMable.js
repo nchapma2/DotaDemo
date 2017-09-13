@@ -175,7 +175,7 @@ class DOMNodeCollection {
     this.elements = arr;
     this.elements.forEach ( (el) => el.callbacks = {});
   }
-  
+
   html(string) {
     if (string) {
       for (let i = 0; i < this.elements.length; i++) {
