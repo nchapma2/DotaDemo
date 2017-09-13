@@ -1,0 +1,80 @@
+
+body {
+  display: flex;
+  justify-content: space-between;
+  background: black;
+  background-image: url("https://wallpaperscraft.com/image/dota_2_art_logo_94265_1920x1080.jpg");
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+.mmr {
+  background: white;
+}
+
+.footer {
+  margin-top: 20px;
+  align-self: flex-end;
+  color: white;
+}
+
+.hero-select {
+  order: -1;
+  width: 50%;
+}
+
+.hero-image-div {
+  order: -1;
+  width: 260px;
+  height: 150px;
+}
+
+.mmr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.distribution {
+  margin-right: 60px;
+  margin-top: 100px;
+}
+
+.dota {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  margin-top: 20px;
+}
+
+table {
+  background: black;
+  border: 2px solid white;
+  color: white;
+}
+
+td {
+  padding: 10px;
+  color: white
+  border: 2px solid white;
+}
+
+tr {
+  color: white
+  border: 2px solid white;
+}
+
+th {
+  padding: 5px;
+  color: white
+  border: 2px solid white;
+}

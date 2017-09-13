@@ -2,13 +2,53 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href='index.css'>
+    </link>
     <script src="./DOMable.js" charset="utf-8"></script>
     <title></title>
   </head>
   <body>
-    
     <div class="dota">
-
+      <div class="hero-image-div">
+        <img class="hero-image"></img>
+      </div>
+    <div class='hero-stats'>
+      <div class='tables'>
+        <h2>Hero Statistics Across MMR Percentiles</h2>
+        <table class='stats' rules="all">
+          <tr>
+            <th>MMR Percentile</th>
+            <th>GPM</th>
+            <th>DPM</th>
+            <th>HPM</th>
+            <th>KPG</th>
+            <th>LHPG</th>
+            <th>Tower Damage</th>
+            <th>XPM</th>
+          </tr>
+          <tr class='perc'>
+          </tr>
+          <tr class='p01'></tr>
+          <tr class='p02'></tr>
+          <tr class='p03'></tr>
+          <tr class='p04'></tr>
+          <tr class='p05'></tr>
+          <tr class='p06'></tr>
+          <tr class='p07'></tr>
+          <tr class='p08'></tr>
+          <tr class='p09'></tr>
+          <tr class='p095'></tr>
+          <tr class='p099'></tr>
+        </table>
+        <div class='footer'>By Nate Chapman</div>
+        </div>
+      </div>
+    </div>
+    <div class='distribution'>
+      <div class='mmr'>
+        <div>MMR Distribution</div>
+        <img class='dist'src="http://i.imgur.com/cgNYRRX.png"/>
+      </div>
     </div>
     <script src="./main.js" charset="utf-8"></script>
   </body>
